@@ -1,74 +1,69 @@
 import asyncio
 import logging
 import sys
-from datetime import datetime
 from os import getenv
-from typing import Iterable
 
-from aiogram import Bot, Dispatcher, html, F
+from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.filters import CommandStart, Filter
-from aiogram.types import Message, BotCommand
+from aiogram.utils.i18n import I18n, FSMI18nMiddleware
 from dotenv import load_dotenv
-from redis_dict import RedisDict
 
-database = RedisDict('users')
+from config import database
+from routers.information import information_router
+from routers.registration import registration_router
+from routers.start import start_router
+from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
+from aiohttp import web
+import json
+import logging
+import os
+import sys
+from random import sample, shuffle
+from time import sleep
+
 load_dotenv()
 TOKEN = getenv("BOT_TOKEN")
-ADMIN_LIST = 1259522136,
-dp = Dispatcher()
+
+WEB_SERVER_HOST = getenv("WEB_SERVER_HOST")
+WEB_SERVER_PORT = int(getenv("WEB_SERVER_PORT"))
+WEBHOOK_PATH = getenv("WEBHOOK_PATH")
+WEBHOOK_SECRET = getenv("WEBHOOK_SECRET")
+BASE_WEBHOOK_URL = getenv("BASE_WEBHOOK_URL")
 
 
-class IsAdmin(Filter):
-    def __init__(self, admin_list: Iterable[int]) -> None:
-        self.admin_list = admin_list
-
-    async def __call__(self, message: Message) -> bool:
-        return message.from_user.id in self.admin_list
-
-
-@dp.message(F.text.startswith("/stat"), IsAdmin(ADMIN_LIST))
-async def stat(message: Message):
-    users = database.get('users')
-    user = message.text.split()[-1]
-    for i in users.items():
-        if i[0] == user:
-            await message.answer(f"{i[1]}")
-            return
-    await message.answer("this user is not registered")
-    database['users'] = users
-
-@dp.message(IsAdmin(ADMIN_LIST), F.text.startswith("/send"))
-async def send(message: Message, bot: Bot):
-    user_id = message.text.split()[1]
-    msg = message.text.split()[-1]
-    await bot.send_message(text=msg, chat_id=user_id)
-
-
-@dp.message(CommandStart())
-async def command_start_handler(message: Message) -> None:
-    users = database.get('users')
-    user_id = str(message.from_user.id)
-    users[user_id] = datetime.now().strftime("%Y-%m-%d %H:%M:%S"[: -3])
-    database['users'] = users
-    await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!\nYou are now registered")
-
-
-async def on_startup(bot: Bot) -> None:
+async def on_startup(bot: Bot):
+    await bot.set_webhook(f"{BASE_WEBHOOK_URL}{WEBHOOK_PATH}", secret_token=WEBHOOK_SECRET)
     database['users'] = database.get('users', {})
-    command_list = [
-        BotCommand(command='start', description='to start the bot')
-    ]
-    await bot.set_my_commands(command_list)
 
+async def on_shutdown(bot: Bot) -> None:
+    await bot.delete_webhook(drop_pending_updates=True)
 
-async def main() -> None:
+def main() -> None:
+    dp = Dispatcher()
+
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    i18n = I18n(path="locales", default_locale="en", domain="messages")
+    dp.update.outer_middleware(FSMI18nMiddleware(i18n))
     dp.startup.register(on_startup)
-    await dp.start_polling(bot)
+    dp.include_routers(start_router, information_router, registration_router)
+
+
+    app = web.Application()
+
+    webhook_requests_handler = SimpleRequestHandler(
+        dispatcher=dp,
+        bot=bot,
+        secret_token=WEBHOOK_SECRET,
+    )
+
+    webhook_requests_handler.register(app, path=WEBHOOK_PATH)
+
+    setup_application(app, dp, bot=bot)
+
+    web.run_app(app, host=WEB_SERVER_HOST, port=WEB_SERVER_PORT)
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-    asyncio.run(main())
+    main()
