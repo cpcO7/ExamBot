@@ -1,0 +1,332 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-05-20 19:03+0500\n"
+"PO-Revision-Date: 2024-05-24 12:43+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: main_keyboard.py:8
+msgid "Registration"
+msgstr "Registratsiya bo'limi"
+
+#: main_keyboard.py:8
+msgid "About us"
+msgstr "Biz haqimzda"
+
+#: main_keyboard.py:9
+msgid "Change language"
+msgstr "Tilni tanlang"
+
+#: routers/information.py:11
+msgid ""
+"\n"
+"Applications for the Skills & Management Internship program are open!\n"
+"\n"
+"Maharat Institute of Research and Management is pleased to announce a "
+"three-month internship program in the fields of Law, Education, "
+"Economics, Media, Journalism and Computer Science!\n"
+"\n"
+"📝 Eligibility:\n"
+"- University students, recent graduates and people wishing to enrich "
+"their knowledge through research work.\n"
+"- Availability and commitment to a 3-month program\n"
+"- Ability to work in Microsoft Office package\n"
+"- Open to LLL (lifelong learning).\n"
+"- Knowledge of English\n"
+"\n"
+"💼Advantage:\n"
+"\n"
+"- Participation in effective projects\n"
+"- gaining valuable experience in research and project development\n"
+"- Expand your connections and develop personally and professionally.\n"
+"- Receive certificate and recommendations upon successful completion\n"
+"\n"
+"📅 Deadline: June 7, 2024\n"
+"\n"
+"✅ Form: click here.\n"
+"\n"
+"📩 Apply now and become part of a dynamic community dedicated to human "
+"capital development in Uzbekistan and beyond."
+msgstr ""
+
+#: routers/registration.py:19
+msgid ""
+"Please enter your full name: \n"
+"Example: Yozilov Shahriyor"
+msgstr ""
+"Ismingizni kiriting: \n"
+"Masalan: Yozilov Shahriyor"
+
+#: routers/registration.py:29
+msgid ""
+"Please click button to send your phone number or enter your phone number:"
+" \n"
+"Example: +998956012347"
+msgstr ""
+"Telefon raqamingizni yuborish yoki telefon raqamingizni kiritish uchun "
+"tugmani bosing:\n"
+"Misol: +998956012347"
+
+#: routers/registration.py:42
+msgid ""
+"Please enter your email: \n"
+"Example: helloworld@gmail.com"
+msgstr ""
+"Iltimos, elektron pochta manzilingizni kiriting: \n"
+"Masalan: helloworld@gmail.com"
+
+#: routers/registration.py:49
+msgid ""
+"Please enter your country:\n"
+"Example: England"
+msgstr ""
+"Mamlakatingizni kiriting:\n"
+"Misol: Angliya"
+
+#: routers/registration.py:58
+msgid ""
+"Please enter your nationality:\n"
+"Example: English"
+msgstr ""
+"Iltimos, millatingizni kiriting:\n"
+"Misol: inglizcha"
+
+#: routers/registration.py:68
+msgid "🎓University student"
+msgstr "🎓Universitet talabasi"
+
+#: routers/registration.py:69
+msgid "🎓Master's student"
+msgstr "🎓Magister talabasi"
+
+#: routers/registration.py:70
+msgid "🎓Bachelor's graduate"
+msgstr "🎓Bakalavriat bitiruvchisi"
+
+#: routers/registration.py:71
+msgid "🎓Master's graduate"
+msgstr "🎓Magistr bitiruvchisi"
+
+#: routers/registration.py:72
+msgid "🧪PhD scholar"
+msgstr "🧪PhD olimi"
+
+#: routers/registration.py:73
+msgid "🥼Doctor of Science (DsC) scholar"
+msgstr "🥼Fan doktori (DsC) olimi"
+
+#: routers/registration.py:75
+msgid "👇 Other..."
+msgstr "👇 Boshqa..."
+
+#: routers/registration.py:80
+msgid "Mark the highest level you have achieved: "
+msgstr "Siz erishgan eng yuqori darajani belgilang:"
+
+#: routers/registration.py:89
+msgid "<b>Enter your University name: </b>"
+msgstr "<b>Universitet nomini kiriting: </b>"
+
+#: routers/registration.py:96
+msgid ""
+"<b>Enter your highest degree attained: </b>\n"
+"<em>For example: University student, Master's student, etc.</em>"
+msgstr ""
+"<b>Eng yuqori darajangizni kiriting: </b>\n"
+"<em>Masalan: Universitet talabasi, magistratura talabasi va boshqalar</em>"
+
+#: routers/registration.py:103
+msgid "<b>Enter the name of your university: </b>"
+msgstr "<b>Universitetingiz nomini kiriting: </b>"
+
+#: routers/registration.py:110
+msgid "<b>Enter your field of study: </b>"
+msgstr "<b>Ta'lim sohangizni kiriting: </b>"
+
+#: routers/registration.py:118
+msgid ""
+"<b>If you have, enter your academic achivements or award, otherwise send "
+"as I don't have </b>"
+msgstr ""
+"<b>Agar sizda bo'lsa, akademik yutuqlaringizni yoki mukofotingizni "
+"kiriting, aks holda yuboring Menda yo'q </b>"
+
+#: routers/registration.py:125
+msgid "<b>Enter your current job </b>"
+msgstr "<b>Joriy ish joyingizni kiriting </b>"
+
+#: routers/registration.py:132
+msgid "<b>Enter your current workplace </b>"
+msgstr "<b>Joriy ish joyingizni kiriting </b>"
+
+#: routers/registration.py:139
+msgid ""
+" \n"
+"<b>The form you filled out</b>\n"
+"Full name: {full_name}\n"
+"Email address: {email_address}\n"
+"Phone number: {phone_number}\n"
+"Nationality: {nationality}\n"
+"Current country of residence: {current_country_of_residence}\n"
+"Highest degree attained: {highest_degree_attained}\n"
+"University name: {name_of_institution}\n"
+"Field of study: {field_of_study}\n"
+"Academic achievements or awards: {academic_achivements_or_awards}\n"
+"Current job position: {current_job}\n"
+"Current workplace: {current_workplace}"
+msgstr ""
+"\n"
+"<b>Siz toʻldirgan shakl</b>\n"
+"Toʻliq ism: {full_name}\n"
+"E-pochta manzili: {email_address}\n"
+"Telefon raqami: {phone_number}\n"
+"Millati: {millati}\n"
+"Joriy yashash mamlakati: {joriy_yashash_davlati}\n"
+"Erishgan eng yuqori daraja: {highest_degree_degree}\n"
+"Universitet nomi: {name_of_institution}\n"
+"Ta'lim sohasi: {field_of_study}\n"
+"Akademik yutuqlar yoki mukofotlar: {academic_achivements_or_awards}\n"
+"Joriy lavozim: {current_job}\n"
+"Joriy ish joyi: {current_workplace}"
+
+#: routers/registration.py:166
+msgid "Continue"
+msgstr "Davom eting"
+
+#: routers/registration.py:167
+msgid "Send to admin"
+msgstr "Adminga jo'natish"
+
+#: routers/registration.py:179
+msgid "Successfully sent to admin"
+msgstr "Adminga muvaffaqiyatli yuborildi"
+
+#: routers/registration.py:186
+msgid ""
+"\n"
+"How do you think you can contribute to making the internship interesting?"
+" \n"
+"Tell us about your hobbies, unique interests, and qualities you bring to "
+"the table. \n"
+"Please keep your answer to 50 words or less.\n"
+msgstr ""
+"\n"
+"– Amaliyotni qiziqarli o‘tkazishga qanday hissa qo‘sha olasiz deb "
+"o‘ylaysiz?\n"
+"Bizga sevimli mashg'ulotlaringiz, o'ziga xos qiziqishlaringiz va o'zingiz"
+" olib keladigan fazilatlaringiz haqida gapirib beringstol. \n"
+"Iltimos, javobingizni 50 yoki undan kam soʻz bilan qoldiring.\n"
+
+#: routers/registration.py:199
+msgid ""
+"What skills and knowledge do you hope to improve gain from this "
+"experience?\n"
+"Please keep your answer to 50 words or less."
+msgstr ""
+"Bundan qanday ko'nikmalar va bilimlarni yaxshilashga umid qilasiztajriba?"
+"\n"
+"Iltimos, javobingizni 50 yoki undan kam soʻzdan iborat qilib qoʻying."
+
+#: routers/registration.py:206
+msgid "How or where did you hear about this internship opportunity?"
+msgstr "Ushbu amaliyot imkoniyati haqida qayerdan yoki qayerdan eshitdingiz?"
+
+#: routers/registration.py:214
+msgid ""
+"Is there any additional information you would like to share about "
+"yourself or your application?"
+msgstr ""
+"Siz baham ko'rmoqchi bo'lgan qo'shimcha ma'lumot bormiO'zingizmi yoki "
+"arizangizmi?"
+
+#: routers/registration.py:221
+msgid "Upload your CV/resume"
+msgstr "CV/rezyumeni yuklang"
+
+#: routers/registration.py:231
+msgid "Upload the cover letter in PDF format."
+msgstr "Muqova xatini PDF formatida yuklang."
+
+#: routers/registration.py:241
+#, fuzzy
+msgid ""
+" \n"
+"<b>The remaining part of the form you filled 👇</b>\n"
+"{detailed_information}\n"
+"{detailed_information1}\n"
+"{detailed_information2}\n"
+"{detailed_information3}\n"
+"{detailed_information4}\n"
+"{detailed_information5}\n"
+msgstr ""
+"\n"
+"<b>Siz toʻldirgan shaklning qolgan qismi👇</b>\n"
+"{detailed_information}\n"
+"{detailed_information1}\n"
+"{detailed_information2}\n"
+"{detailed_information3}\n"
+
+#: routers/start.py:18
+msgid "Hello {first_name}, welcome to our bot!"
+msgstr "Salom {first_name}, botimizga xush kelibsiz!"
+
+#: routers/start.py:26
+msgid "There are no users yet"
+msgstr "Hali foydalanuvchilar mavjud emas"
+
+#: routers/start.py:31
+msgid "Users info"
+msgstr "Foydalanuvchining malumotlari"
+
+#: routers/start.py:37
+msgid "uzbek"
+msgstr "o'zbek tili"
+
+#: routers/start.py:38
+msgid "english"
+msgstr "ingiliz tili"
+
+#: routers/start.py:39
+msgid "russian"
+msgstr "rus tili"
+
+#: routers/start.py:40
+msgid "Choose the language"
+msgstr "Tillardan birini tanlang"
+
+#: routers/start.py:48
+msgid "Uzbek"
+msgstr "O'zbek tili"
+
+#: routers/start.py:50
+msgid "English"
+msgstr "Ingiliz tili"
+
+#: routers/start.py:52
+msgid "Russian"
+msgstr "Rus tili"
+
+#: routers/start.py:53
+msgid "{lang} is selected"
+msgstr "{lang} tanlangan"
+
+#: routers/start.py:56
+msgid "Welcome! Choose."
+msgstr "Xush kelibsiz! Marhamat tanlang"
+
+#~ msgid "detail"
+#~ msgstr ""
+

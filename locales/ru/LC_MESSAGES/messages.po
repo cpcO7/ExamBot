@@ -1,0 +1,360 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-05-20 19:03+0500\n"
+"PO-Revision-Date: 2024-05-24 12:43+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: main_keyboard.py:8
+msgid "Registration"
+msgstr "Регистрация"
+
+#: main_keyboard.py:8
+msgid "About us"
+msgstr "О нас"
+
+#: main_keyboard.py:9
+msgid "Change language"
+msgstr "Изменить язык"
+
+#: routers/information.py:11
+msgid ""
+"\n"
+"Applications for the Skills & Management Internship program are open!\n"
+"\n"
+"Maharat Institute of Research and Management is pleased to announce a "
+"three-month internship program in the fields of Law, Education, "
+"Economics, Media, Journalism and Computer Science!\n"
+"\n"
+"📝 Eligibility:\n"
+"- University students, recent graduates and people wishing to enrich "
+"their knowledge through research work.\n"
+"- Availability and commitment to a 3-month program\n"
+"- Ability to work in Microsoft Office package\n"
+"- Open to LLL (lifelong learning).\n"
+"- Knowledge of English\n"
+"\n"
+"💼Advantage:\n"
+"\n"
+"- Participation in effective projects\n"
+"- gaining valuable experience in research and project development\n"
+"- Expand your connections and develop personally and professionally.\n"
+"- Receive certificate and recommendations upon successful completion\n"
+"\n"
+"📅 Deadline: June 7, 2024\n"
+"\n"
+"✅ Form: click here.\n"
+"\n"
+"📩 Apply now and become part of a dynamic community dedicated to human "
+"capital development in Uzbekistan and beyond."
+msgstr ""
+
+#: routers/registration.py:19
+msgid ""
+"Please enter your full name: \n"
+"Example: Yozilov Shahriyor"
+msgstr ""
+"Пожалуйста, введите свое полное имя: \n"
+"Пример: Ёзилов Шахриёр"
+
+#: routers/registration.py:29
+msgid ""
+"Please click button to send your phone number or enter your phone number:"
+" \n"
+"Example: +998956012347"
+msgstr ""
+"Пожалуйста, нажмите кнопку, чтобы отправить свой номер телефона, или "
+"введите свой номер телефона:\n"
+"Пример: +998956012347"
+
+#: routers/registration.py:42
+msgid ""
+"Please enter your email: \n"
+"Example: helloworld@gmail.com"
+msgstr ""
+"Пожалуйста, введите свой адрес электронной почты: \n"
+"Пример: helloworld@gmail.com"
+
+#: routers/registration.py:49
+msgid ""
+"Please enter your country:\n"
+"Example: England"
+msgstr ""
+"Пожалуйста, введите вашу страну:\n"
+"Пример: Англия"
+
+#: routers/registration.py:58
+msgid ""
+"Please enter your nationality:\n"
+"Example: English"
+msgstr ""
+"Пожалуйста, введите свое гражданство:\n"
+"Пример: английский"
+
+#: routers/registration.py:68
+msgid "🎓University student"
+msgstr "🎓Студент университета"
+
+#: routers/registration.py:69
+msgid "🎓Master's student"
+msgstr "«🎓Магистр»"
+
+#: routers/registration.py:70
+msgid "🎓Bachelor's graduate"
+msgstr "«🎓Выпускник бакалавра»"
+
+#: routers/registration.py:71
+msgid "🎓Master's graduate"
+msgstr ""
+
+#: routers/registration.py:72
+msgid "🧪PhD scholar"
+msgstr "«🎓Выпускник магистратуры»"
+
+#: routers/registration.py:73
+msgid "🥼Doctor of Science (DsC) scholar"
+msgstr "«  Доктор наук (DsC) ученый»"
+
+#: routers/registration.py:75
+msgid "👇 Other..."
+msgstr "👇 Другое..."
+
+#: routers/registration.py:80
+msgid "Mark the highest level you have achieved: "
+msgstr ""
+
+#: routers/registration.py:89
+msgid "<b>Enter your University name: </b>"
+msgstr "«Отметьте наивысший уровень, которого вы достигли:»"
+
+#: routers/registration.py:96
+msgid ""
+"<b>Enter your highest degree attained: </b>\n"
+"<em>For example: University student, Master's student, etc.</em>"
+msgstr ""
+"<b>Введите высшую степень: </b>\n"
+"<em>Например: студент университета, магистрант и т. д.</em>"
+
+#: routers/registration.py:103
+msgid "<b>Enter the name of your university: </b>"
+msgstr "<b>Enter the name of your university: </b>"
+
+#: routers/registration.py:110
+msgid "<b>Enter your field of study: </b>"
+msgstr "<b>Укажите область обучения: </b>"
+
+#: routers/registration.py:118
+msgid ""
+"<b>If you have, enter your academic achivements or award, otherwise send "
+"as I don't have </b>"
+msgstr ""
+"<b>Если да, укажите свои академические достижения или награды, в "
+"противном случае отправьте так как у меня нет </b>"
+
+#: routers/registration.py:125
+msgid "<b>Enter your current job </b>"
+msgstr "«<b>Введите свою текущую работу </b>»"
+
+#: routers/registration.py:132
+msgid "<b>Enter your current workplace </b>"
+msgstr "«<b>Укажите свое текущее место работы </b>»"
+
+#: routers/registration.py:139
+msgid ""
+" \n"
+"<b>The form you filled out</b>\n"
+"Full name: {full_name}\n"
+"Email address: {email_address}\n"
+"Phone number: {phone_number}\n"
+"Nationality: {nationality}\n"
+"Current country of residence: {current_country_of_residence}\n"
+"Highest degree attained: {highest_degree_attained}\n"
+"University name: {name_of_institution}\n"
+"Field of study: {field_of_study}\n"
+"Academic achievements or awards: {academic_achivements_or_awards}\n"
+"Current job position: {current_job}\n"
+"Current workplace: {current_workplace}"
+msgstr ""
+"\\н<b>Форма, которую вы заполнили</b>\n"
+"Полное имя: {full_name}\n"
+"Адрес электронной почты: {email_address}\n"
+"Номер телефона: {phone_number}\n"
+"Гражданство: {национальность}\n"
+"Текущая страна проживания: {current_country_of_residence}\n"
+"Наивысшая достигнутая степень: {highest_grade_attained}\n"
+"Название университета: {name_of_institution}\n"
+"Область обучения: {field_of_study}\n"
+"«Академические достижения или награды: {academic_achivements_or_awards}\n"
+"»«Текущая должность: {current_job}\n"
+"»«Текущее место работы: {current_workplace}»"
+
+#: routers/registration.py:166
+msgid "Continue"
+msgstr "Продолжать"
+
+#: routers/registration.py:167
+msgid "Send to admin"
+msgstr "Отправить администратору"
+
+#: routers/registration.py:179
+msgid "Successfully sent to admin"
+msgstr "Успешно отправлено администратору"
+
+#: routers/registration.py:186
+msgid ""
+"\n"
+"How do you think you can contribute to making the internship interesting?"
+" \n"
+"Tell us about your hobbies, unique interests, and qualities you bring to "
+"the table. \n"
+"Please keep your answer to 50 words or less.\n"
+msgstr ""
+"\n"
+"«Как вы думаете, что вы можете сделать, чтобы стажировка была "
+"интересной?»\n"
+"«Расскажите нам о своих хобби, уникальных интересах и качествах, которые "
+"вы привносите в жизнь»таблица. \n"
+"«Пожалуйста, не превышайте 50 слов в ответе.\n"
+"»"
+
+#: routers/registration.py:199
+msgid ""
+"What skills and knowledge do you hope to improve gain from this "
+"experience?\n"
+"Please keep your answer to 50 words or less."
+msgstr ""
+
+#: routers/registration.py:206
+msgid "How or where did you hear about this internship opportunity?"
+msgstr ""
+"«Какие навыки и знания вы надеетесь улучшить в результате этого?»опыт?\n"
+"«Пожалуйста, не превышайте 50 слов в ответе»."
+
+#: routers/registration.py:214
+msgid ""
+"Is there any additional information you would like to share about "
+"yourself or your application?"
+msgstr ""
+"«Есть ли какая-либо дополнительная информация, которой вы хотели бы "
+"поделиться?»вы сами или ваше приложение?"
+
+#: routers/registration.py:221
+msgid "Upload your CV/resume"
+msgstr "«Загрузите свое резюме/резюме»"
+
+#: routers/registration.py:231
+msgid "Upload the cover letter in PDF format."
+msgstr "«Загрузите сопроводительное письмо в формате PDF»."
+
+#: routers/registration.py:241
+msgid ""
+" \n"
+"<b>The remaining part of the form you filled 👇</b>\n"
+"{detailed_information}\n"
+"{detailed_information1}\n"
+"{detailed_information2}\n"
+"{detailed_information3}\n"
+"{detailed_information4}\n"
+"{detailed_information5}\n"
+msgstr ""
+
+#: routers/start.py:18
+msgid "Hello {first_name}, welcome to our bot!"
+msgstr ""
+
+#: routers/start.py:26
+msgid "There are no users yet"
+msgstr ""
+
+#: routers/start.py:31
+msgid "Users info"
+msgstr ""
+
+#: routers/start.py:37
+msgid "uzbek"
+msgstr ""
+
+#: routers/start.py:38
+msgid "english"
+msgstr ""
+
+#: routers/start.py:39
+msgid "russian"
+msgstr ""
+
+#: routers/start.py:40
+#, fuzzy
+msgid "Choose the language"
+msgstr "Изменить язык"
+
+#: routers/start.py:48
+msgid "Uzbek"
+msgstr ""
+
+#: routers/start.py:50
+msgid "English"
+msgstr ""
+
+#: routers/start.py:52
+msgid "Russian"
+msgstr ""
+
+#: routers/start.py:53
+msgid "{lang} is selected"
+msgstr ""
+
+#: routers/start.py:56
+msgid "Welcome! Choose."
+msgstr ""
+
+#~ msgid "detail"
+#~ msgstr ""
+#~ "\n"
+#~ "Заявки на участие в программе стажировок"
+#~ " по навыкам и менеджменту открыты!\n"
+#~ "\n"
+#~ "Институт исследований и менеджмента Махарата"
+#~ " рад объявить о Трехмесячная программа "
+#~ "стажировок в области права, "
+#~ "образования,Экономика, СМИ, журналистика и "
+#~ "информатика!\n"
+#~ "\n"
+#~ "📝 Право на участие:\n"
+#~ "- Студенты вузов, недавние выпускники и"
+#~ " люди, желающие обогатитьсяих знания "
+#~ "посредством исследовательской работы.\n"
+#~ "- Доступность и приверженность трехмесячной программе\n"
+#~ "- Возможность работы в пакете Microsoft Office\n"
+#~ "- Открыто для LLL (обучение на протяжении всей жизни).\n"
+#~ "- Знание английского языка\n"
+#~ "\n"
+#~ "💼Преимущество:\n"
+#~ "\n"
+#~ "- Участие в эффективных проектах\n"
+#~ "- получение ценного опыта в исследованиях и разработке проектов\n"
+#~ "- Расширяйте свои связи и развивайтесь лично и профессионально.\n"
+#~ "- Получить сертификат и рекомендации при успешном завершении\n"
+#~ "\n"
+#~ "📅 Крайний срок: 7 июня 2024 г.\n"
+#~ "\n"
+#~ " ✅ Форма: нажмите здесь.\n"
+#~ "\n"
+#~ "📩 Подайте заявку сейчас и станьте "
+#~ "частью динамичного сообщества, посвященного "
+#~ "людямКапитальное развитие в Узбекистане и "
+#~ "за его пределами."
+
